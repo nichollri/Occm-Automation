@@ -7,39 +7,37 @@ all:
     client_id: Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC
     cloud_provider_account: InstanceProfile
     api_backend: cloudmanager.cloud.netapp.com
-    refToken: xxxxxxyyyyyyyzzzzz
-    connector_id: abcdefghijklmnopqrstuvwxyzclients
-    my_workspace: myworkspace
+    refToken: Tf1DcmOz0r4cSnzglniqonhstqKy7cPhSRpsjSBQlgWJV
+    connector_id: fDEakwp53TRq6kc1nyxJb7cKabtKqonMclients 
+    my_workspace: RNicholl 
     envType: awsha
-    otc_name: my_cvo
-    create_otc: true
-    region: us-east-2
-    vpc_id: vpc-xxxyyy
-    node1SubnetId: subnet-aaabbbcccddd
-    node2SubnetId: subnet-eeefffggghhh
-    mediatorSubnetId: subnet-iiijjjkkklll
-    routeTableIds: rtb-xxxxyyyy
-    instance_type: m4.4xlarge
-    key_pair: my-key
-    svmPassword: mypassword
+    we_type_path: /aws/ha
+    otc_name: rncvo
+    create_otc: false
+    region: us-west-2
+    vpc_id: vpc-673ae603
+    node1SubnetId: subnet-972ad3e1 
+    node2SubnetId: subnet-2171d545 
+    mediatorSubnetId: subnet-b2aba4ea
+    routeTableIds: rtb-85219ae1 
+    instance_type: m5.4xlarge
+    key_pair: Richard-DemoTLV 
+    svmPassword: Netapp234 
     clusterFloatingIP: 1.1.1.1
     dataFloatingIP1: 1.1.1.2
     dataFloatingIP2: 1.1.1.3
     svmFloatingIP: 1.1.1.4
 # A dictionary of all aggregates that will be created
     aggrList:
-      - {aggrName: aggr1, diskSize: 8}
-      - {aggrName: aggr2, diskSize: 8}
-      - {aggrName: aggr3, diskSize: 8}
+      - {aggrName: aggr2, diskSize: 1}
+      - {aggrName: aggr3, diskSize: 1}
 # A dictionary of all volumes that will be created
     iscsiVolList:
-      - {aggrName: aggr1, volName: iscsi1, iqn: "iqn.1994-05.com.redhat:5a1717a4e42", os_name: linux, volSize: 16}
-      - {aggrName: aggr1, volName: iscsi2, iqn: "iqn.1994-05.com.redhat:5a1717a4e42", os_name: linux, volSize: 16}
-      - {aggrName: aggr1, volName: iscsi3, iqn: "iqn.1994-05.com.redhat:5a1717a4e42", os_name: linux, volSize: 16}
+      - {aggrName: aggr2, volName: iscsi1, iqn: "InitiatorName=iqn.1994-05.com.redhat:5e492c3b660", os_name: linux, volSize: 2}
     volList:
-      - {volName: firstVol, volSize: 10}
-      - {volName: secondVol, volSize: 10}
-      - {volName: thirdVol, volSize: 10}
+      - {volName: firstVol, volSize: 2}
+      - {volName: secondVol, volSize: 2}
+      - {volName: thirdVol, volSize: 2}
 
 
 

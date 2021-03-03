@@ -1,0 +1,44 @@
+{
+  "name": "rncvo",
+  "tenantId": "workspace-yNB0SF6p",
+  "region": "us-west-2",
+  "packageName": "aws_ha_custom",
+  "dataEncryptionType": "AWS",
+  "capacityTier": "S3",
+  "vsaMetadata": {
+    "ontapVersion": "latest",
+    "licenseType": "ha-cot-premium-paygo",
+    "instanceType": "m5.4xlarge",
+    "useLatestVersion": true
+  },
+  "writingSpeedState": "NORMAL",
+  "svmPassword": "Netapp234",
+  "vpcId": "vpc-673ae603",
+  "ontapEncryptionParameters": null,
+  "ebsVolumeType": "gp2",
+  "ebsVolumeSize": {
+      "size": 8,
+      "unit": "TB",
+      "_identifier": "8 TB"
+  },
+  "haParams": {
+    "clusterFloatingIP": "1.1.1.1",
+    "dataFloatingIP": "1.1.1.2",
+    "dataFloatingIP2": "1.1.1.3",
+    "svmFloatingIP": "1.1.1.4",
+    "failoverMode": "FloatingIP",
+    "node1SubnetId": "subnet-972ad3e1",
+    "node2SubnetId": "subnet-2171d545",
+    "mediatorSubnetId": "subnet-b2aba4ea",
+    "routeTableIds": [
+      "rtb-85219ae1"
+    ],
+    "mediatorKeyPairName": "Richard-DemoTLV",
+    "mediatorAssignPublicIP": true
+  },
+  "awsTags": [],
+  "optimizedNetworkUtilization": false,
+  "instanceTenancy": "default",
+  "cloudProviderAccount": "InstanceProfile",
+  "clusterKeyPairName": "Richard-DemoTLV"
+}

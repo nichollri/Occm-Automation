@@ -1,0 +1,10 @@
+{
+	"workingEnvironmentId": "VsaWorkingEnvironment-OZCZ8tCH",
+	"name": "aggr3",
+	"numberOfDisks": 2,
+	"capacityTier": "S3",
+	"diskSize": {
+		"size": 1,
+		"unit": "TB"
+		}
+}
